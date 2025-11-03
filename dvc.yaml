@@ -11,3 +11,6 @@ stages:
   train:
     cmd: \ -d src/train.py \ -d data/processed_loan_train.csv \ -o model.pkl \ 
       python src/train.py
+  evaluate:
+    cmd: \ -d src/evaluate.py \ -d model.pkl \ -d data/processed_loan_test.csv \
+      -M metrics.json \ python src/evaluate.py
