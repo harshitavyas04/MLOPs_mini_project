@@ -1,0 +1,10 @@
+stages:
+  preprocess:
+    cmd: python src/preprocess.py
+    deps:
+      - src/preprocess.py
+      - data/loan-train.csv
+      - data/loan-test.csv
+    outs:
+      - data/processed_loan_train.csv
+      - data/processed_loan_test.csv
