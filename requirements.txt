@@ -1,0 +1,22 @@
+# Core libraries
+pandas
+numpy
+scikit-learn
+xgboost
+
+# Explainability
+lime
+shap
+
+# MLOps tools
+dvc
+mlflow
+
+# Deployment
+fastapi
+uvicorn
+
+# Utilities
+matplotlib
+seaborn
+joblib
