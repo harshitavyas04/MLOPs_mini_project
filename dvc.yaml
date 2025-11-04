@@ -10,9 +10,9 @@ stages:
       - data/processed_loan_test.csv
 
   train:
-    cmd: python src/train.py
+    cmd: python src/train_model.py
     deps:
-      - src/train.py
+      - src/train_model.py
       - data/processed_loan_train.csv
     outs:
       - model.pkl
