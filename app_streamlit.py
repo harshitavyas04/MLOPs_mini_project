@@ -86,7 +86,7 @@ import joblib
 import pandas as pd
 from src.predict import predict_loan_status
 
-st.set_page_config(page_title="Loan Approval Prediction", page_icon="🏦", layout="centered")
+st.set_page_config(page_title="Loan Approval Prediction App (v2.0)", page_icon="🏦", layout="centered")
 
 # --- Sidebar: Model Info ---
 st.sidebar.header("Model Information")
