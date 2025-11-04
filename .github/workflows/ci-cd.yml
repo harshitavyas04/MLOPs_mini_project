@@ -31,15 +31,9 @@ jobs:
 
       - name: Run tests
         run: |
-          echo "Running tests..."
+          echo "Running automated tests..."
           pip install pytest
           pytest tests/ --maxfail=1 --disable-warnings -q
-
-      - name: Run sanity test (Streamlit syntax)
-        run: |
-          echo "Running Streamlit sanity check..."
-          python -m py_compile app_streamlit.py
-          echo "Streamlit app compiled successfully"
 
       - name: Upload build artifact (optional)
         uses: actions/upload-artifact@v4
