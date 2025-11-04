@@ -19,3 +19,6 @@ joblib
 
 # Web framework
 streamlit
+
+pytest
+flake8
