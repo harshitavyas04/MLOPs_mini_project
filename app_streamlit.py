@@ -100,7 +100,7 @@ except Exception as e:
     st.stop()
 
 # --- App Header ---
-st.title("🏦 Loan Approval Prediction App")
+st.title("🤝 Loan Approval Prediction App (v2.0)")
 st.write("""
 This app predicts whether a loan application is **Approved** or **Rejected** based on applicant details.
 """)
