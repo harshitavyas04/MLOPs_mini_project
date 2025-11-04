@@ -1,3 +1,5 @@
+import json
+import os
 import pandas as pd
 import joblib
 import mlflow
@@ -24,7 +26,23 @@ def evaluate_model(model_path, X_test_path, y_test_path):
     f1 = f1_score(y_test, y_pred)
     cm = confusion_matrix(y_test, y_pred).tolist()
 
-    # --- Log to MLflow ---
+    # --- Save evaluation metrics locally ---
+    os.makedirs("reports", exist_ok=True)
+
+    report = {
+        "accuracy": acc,
+        "precision": prec,
+        "recall": rec,
+        "f1_score": f1,
+        "confusion_matrix": cm
+    }
+
+    with open("reports/evaluation_report.json", "w") as f:
+        json.dump(report, f, indent=4)
+
+    print("\n✅ Evaluation report saved at reports/evaluation_report.json")
+
+    # --- Log metrics to MLflow ---
     with mlflow.start_run(run_name="Evaluation_Run"):
         mlflow.log_metric("Accuracy", acc)
         mlflow.log_metric("Precision", prec)
