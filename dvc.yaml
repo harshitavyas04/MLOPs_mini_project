@@ -4,10 +4,11 @@ stages:
     deps:
       - src/preprocess.py
       - data/loan-train.csv
-      - data/loan-test.csv
     outs:
       - data/processed_loan_train.csv
       - data/processed_loan_test.csv
+      - data/y_train.csv
+      - data/y_test.csv
 
   train:
     cmd: python src/train_model.py
@@ -15,15 +16,17 @@ stages:
       - src/train_model.py
       - data/processed_loan_train.csv
       - data/processed_loan_test.csv
+      - data/y_train.csv
+      - data/y_test.csv
     outs:
       - models/best_model.pkl
-
 
   evaluate:
     cmd: python src/evaluate.py
     deps:
       - src/evaluate.py
-      - model.pkl
+      - models/best_model.pkl
       - data/processed_loan_test.csv
-    metrics:
-      - metrics.json
+      - data/y_test.csv
+    outs:
+      - reports/evaluation_report.json
