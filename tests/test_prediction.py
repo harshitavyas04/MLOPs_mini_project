@@ -17,3 +17,4 @@ def test_model_prediction_approved():
     result = predict_loan_status(sample)
     assert result in ["Approved", "Rejected"]
 # testing CI 
+# again testing CI
