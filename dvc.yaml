@@ -2,15 +2,26 @@ stages:
   preprocess:
     cmd: python src/preprocess.py
     deps:
-    - src/preprocess.py
-    - data/loan-train.csv
-    - data/loan-test.csv
+      - src/preprocess.py
+      - data/loan-train.csv
+      - data/loan-test.csv
     outs:
-    - data/processed_loan_train.csv
-    - data/processed_loan_test.csv
+      - data/processed_loan_train.csv
+      - data/processed_loan_test.csv
+
   train:
-    cmd: \ -d src/train.py \ -d data/processed_loan_train.csv \ -o model.pkl \ 
-      python src/train.py
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - data/processed_loan_train.csv
+    outs:
+      - model.pkl
+
   evaluate:
-    cmd: \ -d src/evaluate.py \ -d model.pkl \ -d data/processed_loan_test.csv \
-      -M metrics.json \ python src/evaluate.py
+    cmd: python src/evaluate.py
+    deps:
+      - src/evaluate.py
+      - model.pkl
+      - data/processed_loan_test.csv
+    metrics:
+      - metrics.json
