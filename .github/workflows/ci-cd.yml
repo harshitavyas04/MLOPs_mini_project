@@ -1,4 +1,4 @@
-name: CI/CD Pipeline for Loan Prediction App (v2.0)
+name: CI/CD Pipeline for Loan Prediction App 
 
 on:
   push:
