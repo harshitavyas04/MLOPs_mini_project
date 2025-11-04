@@ -1,0 +1,10 @@
+artifact_location: file:///D:/.vscode/Vscode_New/MLOPS%20mini/MLOPs_mini_project/mlruns/971695649214529874/models/m-a7a5dfd7fa744ec9956fc3a288d96223/artifacts
+creation_timestamp: 1762272208123
+experiment_id: '971695649214529874'
+last_updated_timestamp: 1762272210683
+model_id: m-a7a5dfd7fa744ec9956fc3a288d96223
+model_type: null
+name: Gradient Boosting
+source_run_id: a90e2776503e41f19754f26fac9445c5
+status: 2
+status_message: null

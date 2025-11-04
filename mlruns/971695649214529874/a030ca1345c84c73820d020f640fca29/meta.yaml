@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/.vscode/Vscode_New/MLOPS%20mini/MLOPs_mini_project/mlruns/971695649214529874/a030ca1345c84c73820d020f640fca29/artifacts
+end_time: 1762278774935
+entry_point_name: ''
+experiment_id: '971695649214529874'
+lifecycle_stage: active
+run_id: a030ca1345c84c73820d020f640fca29
+run_name: Logistic Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762278766223
+status: 3
+tags: []
+user_id: harsh

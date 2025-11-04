@@ -12,11 +12,10 @@ shap
 dvc
 mlflow
 
-# Deployment
-fastapi
-uvicorn
-
 # Utilities
 matplotlib
 seaborn
 joblib
+
+# Web framework
+streamlit

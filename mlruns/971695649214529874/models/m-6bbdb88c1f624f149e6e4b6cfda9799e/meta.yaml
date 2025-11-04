@@ -1,0 +1,10 @@
+artifact_location: file:///D:/.vscode/Vscode_New/MLOPS%20mini/MLOPs_mini_project/mlruns/971695649214529874/models/m-6bbdb88c1f624f149e6e4b6cfda9799e/artifacts
+creation_timestamp: 1762278775734
+experiment_id: '971695649214529874'
+last_updated_timestamp: 1762278783444
+model_id: m-6bbdb88c1f624f149e6e4b6cfda9799e
+model_type: ''
+name: Random Forest
+source_run_id: 75f54dc9cb9a49b6ba5636462ff026f2
+status: 2
+status_message: null

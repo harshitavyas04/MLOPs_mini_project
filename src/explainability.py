@@ -6,7 +6,7 @@ import joblib
 from lime.lime_tabular import LimeTabularExplainer
 
 def explain_prediction(sample, X_train):
-    model = joblib.load("models/random_forest_model.pkl")
+    model = joblib.load("models/best_model.pkl")
 
     # LIME
     explainer = LimeTabularExplainer(

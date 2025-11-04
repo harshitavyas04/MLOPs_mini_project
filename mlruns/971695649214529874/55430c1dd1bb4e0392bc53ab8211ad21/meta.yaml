@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/.vscode/Vscode_New/MLOPS%20mini/MLOPs_mini_project/mlruns/971695649214529874/55430c1dd1bb4e0392bc53ab8211ad21/artifacts
+end_time: 1762272646391
+entry_point_name: ''
+experiment_id: '971695649214529874'
+lifecycle_stage: active
+run_id: 55430c1dd1bb4e0392bc53ab8211ad21
+run_name: XGBoost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762272643709
+status: 3
+tags: []
+user_id: harsh

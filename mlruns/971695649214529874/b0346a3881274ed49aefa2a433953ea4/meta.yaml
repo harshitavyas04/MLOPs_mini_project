@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/.vscode/Vscode_New/MLOPS%20mini/MLOPs_mini_project/mlruns/971695649214529874/b0346a3881274ed49aefa2a433953ea4/artifacts
+end_time: 1762272207930
+entry_point_name: ''
+experiment_id: '971695649214529874'
+lifecycle_stage: active
+run_id: b0346a3881274ed49aefa2a433953ea4
+run_name: Random Forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762272204878
+status: 3
+tags: []
+user_id: harsh

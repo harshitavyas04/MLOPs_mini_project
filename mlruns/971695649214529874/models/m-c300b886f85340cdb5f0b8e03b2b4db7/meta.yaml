@@ -1,0 +1,10 @@
+artifact_location: file:///D:/.vscode/Vscode_New/MLOPS%20mini/MLOPs_mini_project/mlruns/971695649214529874/models/m-c300b886f85340cdb5f0b8e03b2b4db7/artifacts
+creation_timestamp: 1762277217871
+experiment_id: '971695649214529874'
+last_updated_timestamp: 1762277220486
+model_id: m-c300b886f85340cdb5f0b8e03b2b4db7
+model_type: null
+name: XGBoost
+source_run_id: a060d5123cf8491fa403eb43a3d1cd98
+status: 2
+status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/.vscode/Vscode_New/MLOPS%20mini/MLOPs_mini_project/mlruns/971695649214529874/36f7bb7bc151438d9f8ba6687047753e/artifacts
+end_time: 1762272643706
+entry_point_name: ''
+experiment_id: '971695649214529874'
+lifecycle_stage: active
+run_id: 36f7bb7bc151438d9f8ba6687047753e
+run_name: Gradient Boosting
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762272640973
+status: 3
+tags: []
+user_id: harsh

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/902171320201242154/5d69a643b2d24c46802f54acfc6c3cbc/artifacts
+end_time: 1762273125078
+entry_point_name: ''
+experiment_id: '902171320201242154'
+lifecycle_stage: active
+run_id: 5d69a643b2d24c46802f54acfc6c3cbc
+run_name: Evaluation_Run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762273124887
+status: 3
+tags: []
+user_id: harsh

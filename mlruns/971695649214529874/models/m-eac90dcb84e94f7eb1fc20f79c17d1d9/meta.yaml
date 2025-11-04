@@ -1,0 +1,10 @@
+artifact_location: file:///D:/.vscode/Vscode_New/MLOPS%20mini/MLOPs_mini_project/mlruns/971695649214529874/models/m-eac90dcb84e94f7eb1fc20f79c17d1d9/artifacts
+creation_timestamp: 1762278766567
+experiment_id: '971695649214529874'
+last_updated_timestamp: 1762278774902
+model_id: m-eac90dcb84e94f7eb1fc20f79c17d1d9
+model_type: ''
+name: Logistic Regression
+source_run_id: a030ca1345c84c73820d020f640fca29
+status: 2
+status_message: null
