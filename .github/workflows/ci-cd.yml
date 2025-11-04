@@ -1,4 +1,4 @@
-name: CI/CD Pipeline for Streamlit Loan Prediction App
+name: CI/CD Pipeline for Loan Prediction App (v2.0)
 
 on:
   push:
