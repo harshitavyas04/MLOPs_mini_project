@@ -14,8 +14,10 @@ stages:
     deps:
       - src/train_model.py
       - data/processed_loan_train.csv
+      - data/processed_loan_test.csv
     outs:
-      - model.pkl
+      - models/best_model.pkl
+
 
   evaluate:
     cmd: python src/evaluate.py
