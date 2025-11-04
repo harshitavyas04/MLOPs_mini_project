@@ -24,9 +24,20 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Run sanity test
+      - name: Lint code (Optional but recommended)
         run: |
-          echo "Running basic Streamlit sanity test..."
+          pip install flake8
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics || true
+
+      - name: Run tests
+        run: |
+          echo "Running tests..."
+          pip install pytest
+          pytest tests/ --maxfail=1 --disable-warnings -q
+
+      - name: Run sanity test (Streamlit syntax)
+        run: |
+          echo "Running Streamlit sanity check..."
           python -m py_compile app_streamlit.py
           echo "Streamlit app compiled successfully"
 
@@ -44,7 +55,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Notify Streamlit Cloud
+      - name: Notify Streamlit Cloud (or AWS)
         run: |
-          echo "Code pushed successfully!"
-          echo "If linked to Streamlit Cloud, deployment will trigger automatically."
+          echo "Deployment Stage Triggered!"
+          echo "If linked to Streamlit Cloud, this push will trigger a new deployment automatically."
